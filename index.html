@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>尊敬的老师 😋 美丽的衡水湖😄欢迎您来</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="short icon" href="images/title.png" />
+	<style type="text/css">
+		body{
+			margin: 0px auto;
+			text-align: center;
+			background-image: url(images/background3.jpg);
+			background-attachment: fixed;
+		}
+		#top{
+			width: 100%;
+			height: 120px;
+			background-color: burlywood;
+			margin-right: 50px;
+		}
+		#logo{
+			width: 200px;
+			height: 50px;
+			margin-left: 200px;
+			float: left;
+
+		}
+		#welcome{
+			width: 260px;
+			height: 30px;
+			float: right;
+			margin-right: 200px;
+		}
+		#welcome p{
+			line-height: 5px;
+		}
+		#nav{
+			width: 100%;
+			height: 30px;
+			float: left;
+			margin-top: 30px;
+		}
+		#navCenter{
+			width: 1200px;
+			height: auto;
+			margin: 0px auto;
+		}
+		#navCenter ul{
+			list-style: none;
+			background-attachment: #6e2222;
+			height: auto;
+		}
+
+		#navCenter li{
+			float: left;
+			padding-left: 100px;
+			font-weight: 300;
+			line-height: 3px;
+			color: rgb(60, 148, 175);
+			list-style: none;
+		}
+		#navCenter li a:link{
+			color: white;
+			text-decoration: none;
+		}
+		#navCenter li a:hover{
+			background-color: blueviolet;
+			text-decoration: none;
+		}
+		#navCenter li a:active{
+			color: black;
+		}
+		.toplle { 
+			width:351px; 
+			float:left;
+		}
+
+		#container{
+			width: 1100px;
+			height: auto;
+			margin: 0px auto; 
+		}
+		#main{
+			background: url(images/main.jpg);
+			width: 1100px;
+			margin: 0px auto;
+			margin-top: 5px;
+		}
+		#main img{
+			margin-left: 700px;
+		}
+		#mainBottom{
+			width: 1100px;
+			height: auto;
+		}
+		#mainBottomLeft{
+			width: 300px;
+			height: 350px;
+			margin-top: 50px;
+			background-color: bisque;
+			float: left;
+			margin-left: 40px;
+		}
+		#mainBottomLeft p{
+			font-size: 20px;
+			line-height: 10px;
+			font-family: 宋体;
+			font-weight: 900;
+			text-shadow: 0 0 2px rgb(126, 55, 55);
+		}
+		#mainBottomLeft tr{
+			margin-top: 20px;
+			display: inline-block;
+			margin-top: 20px;
+			padding: 0;
+			float: right;
+		}
+		#buttonSubmit{
+			width: 80px;
+			background-color: yellowgreen;
+			margin-right: 50px;
+		}
+		#buttonFound{
+			width: 80px;
+			background-color: blueviolet;
+			margin-right: 10px;
+		}
+		#mainBottomCenter{
+			width: 300px;
+			height: 350px;
+			margin-top: 50px;
+			margin-left: 60px;
+			background-color: bisque;
+			float: left;
+		}
+		#mainBottomCenter p{
+			font-size: 20px;
+			font-family: 宋体;
+			font-weight: 900;
+			text-shadow: 0 0 2px rgb(126, 55, 55);
+		}
+		#mainBottomCenter a{
+			font-size: 12px;
+		}
+		#mainBottomRight{
+			width: 300px;
+			height: 350px;
+			margin-top: 50px;
+			margin-left: 60px;
+			background-color: bisque;
+			float: left;
+		}
+		#mainBottomRight p{
+			font-size: 20px;
+			font-family: 宋体;
+			font-weight: 900;
+			text-shadow: 0 0 2px rgb(126, 55, 55);
+		}
+		#mainBottomRightMain{
+			width: 250px;
+			height: 150px;
+			font-size: 12px;
+			margin-left: 25px;
+			margin-top: 20px;
+			overflow:auto;
+
+		}
+		#viewIntroduce{
+			width: 1100px;
+			margin-left: 0px;
+			margin-top: 50px;
+			background-color: bisque;
+			float: left;
+		}
+		#fontType{
+			font-size: 30px;
+			font-family: 楷体;
+			text-shadow: 0 0 2px rgb(126, 55, 55);
+			text-align: center;
+
+		}
+		#viewIntroduce p{
+			text-indent: 15px;
+			text-align-last: left;
+			font-size: 12px;
+			font-family: 宋体；
+		}
+		#foot{
+			width: 1100px;
+			float: left;
+			background-color: bisque;
+			margin-top: 5px;
+		}
+		//
+		.box {   
+			width: 800px;
+			height: 300px;
+			top:50px;
+			border: 1px solid red;
+			margin: 100px auto;
+			padding: 5px;            
+		}
+		* {
+
+			padding: 0
+		}
+
+		.inner{      
+			width: 1100px;
+			height: 300px;
+			position: relative;
+			overflow: hidden;
+		}
+		.inner img{
+			width: 1100px;
+			height: 300px;
+			vertical-align: top
+		}
+		#uls{
+			width: 1000%;
+			position: absolute;
+			list-style: none;
+
+		}
+
+		.inner li{
+			float: left;
+
+		}
+
+		ol {
+			position: absolute;
+			height: 20px;
+			right: 20px;
+			bottom: 20px;
+			text-align: center;
+			padding: 5px;
+		}
+		ol li{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			background-color: #fff;
+			margin: 5px;
+			cursor: pointer;
+
+		}
+		ol .current{
+			background-color: red;
+		}
+		#arr{
+			display: none;
+		}
+		#arr span{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: 5px;
+			top: 50%;
+			margin-top: -20px;
+			background: #fff;
+			cursor: pointer;
+			line-height: 40px;
+			text-align: center;
+			font-weight: bold;
+			font-family: '黑体';
+			font-size: 30px;
+			color: #000;
+			opacity: 0.5;
+			border: 1px solid #fff;
+		}
+		#arr #right {
+			right: 5px;
+			left: auto;
+		}
+	</style>
+</head>
+
+<body onload="go()" onbeforeunload="checkLeave()">
+	<div id="top">
+		<div id="logo">
+
+			<img src="images/logo3.png" alt="logo" width="250px" />
+		</div>
+		<div id="welcome">
+			<p>衡水湖欢迎您</p>
+			<div id="time">碧水如镜，青山浮水，倒影翩翩</div>
+			<div class="s">
+				<input name="tj" type="text" placeholder="请输入搜索内容" />
+				<input type="submit" name="s" />
+			</div>
+		</div>
+		<div id="nav">
+			<div id="navCenter">
+				<ul id="ul">
+					<li>
+						<a href="bigHousework.html">首页</a>
+					</li>
+					<li>
+						<a href="bigHousework.html">住宿</a>
+					</li>
+					<li>
+						<a href="bigHousework.html">风景</a>
+					</li>
+					<li>
+						<a href="bigHousework.html">美食</a>
+					</li>
+					<li>
+						<a href="bigHousework.html">联系我们</a>
+					</li>
+					<li>
+						<a href="">更多景区</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="box" id="box">
+			<div class="inner">
+				<div id="arr1" style="display:none;">
+
+				</div>
+				<ul id="uls">
+					<li><a href="#"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3275804235,2229273262&fm=26&gp=0.jpg" alt=""></a></li>
+					<li><a href="#"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=125487424,827632028&fm=26&gp=0.jpg" alt=""></a></li>
+					<li><a href="#"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1311805132,2077013194&fm=26&gp=0.jpg" alt=""></a></li>
+					<li><a href="#"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2264632956,3246169339&fm=26&gp=0.jpg" alt=""></a></li>
+					<li><a href="#"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2735518367,4029017701&fm=26&gp=0.jpg" alt=""></a></li>
+				</ul>
+				<ol class="bar">
+				</ol>
+				<div id="arr">
+					<span id="left"> <</span>
+					<span id="right">></span>
+				</div>
+
+			</div>
+		</div>
+		<div id="mainBottom">
+			<div id="mainBottomLeft">
+				<br>
+				<form>
+					<fieldset>
+						<legend>
+							<p>门票预订</p>
+						</legend>
+						<table>
+							<tr>
+								<td>输入您的姓名：</td>
+								<td>
+									<input type="text" id="user_input">
+								</td>
+							</tr>
+							<tr>
+								<td>输入身份证号：</td>
+								<td>
+									<input type="text" id="number_input">
+								</td>
+							</tr>
+
+							<tr>
+								<td>输入参观时间：</td>
+								<td>
+									<input type="text" id="time_input">
+								</td>
+							</tr>
+
+							<tr>
+								<td>输入游客批次：</td>
+								<td>
+									<input type="text" id="batch_input">
+								</td>
+							</tr>>
+							<tr>
+								<td>
+									<input type="button" value="查询" id="buttonFound">
+								</td>
+								<td>
+									<input type="button" value="提交" id="buttonSubmit">
+								</td>
+							</tr>
+
+						</table>
+					</fieldset>
+				</form>
+			</div>
+			<div id="mainBottomCenter">
+				<p>景点新闻</p>
+				<ul>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/155.html">来衡水湖：一场最美的旅行</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/148.html">衡水湖马拉松赛事新开幕</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/147.html">衡水湖生态搬迁新进展</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/146.html">“五一”衡水湖接待量创新高！</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/145.html">衡水湖美味鸭蛋“香飘四海”</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/142.html"> 游客丢包，景区人员热情寄还</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/141.html">衡水湖,中原山水的美丽记忆</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/140.html">河北衡水湖女篮排名WCBA第八</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/139.html">衡水湖：燕赵大地美丽的传说</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/138.html">人大代表张汝财:衡水湖生态保护</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/137.html">衡水山水湖心亭新游记杂感</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/136.html">衡水湖旅游：误入藕花深处</a>
+					</li>
+					<li>
+						<a href="http://www.chongdugou.com/zxdt/zxdt/135.html">品味完美品读：衡水山水之美</a>
+					</li>
+				</ul>
+			</div>
+			<div id="mainBottomRight">
+				<p>旅游推荐</p>
+				<img src="images/tuijian.jpg" alt="景区图片" width="200px">
+				<div id="mainBottomRightMain">
+					<a href="http://www.chongdugou.com/lytj/lytj/66.html">河北衡水湖国家级自然保护区坐落在河北省衡水市境内，是国家AAAA级旅游景区，也是华北平原惟一保持沼泽、水域、滩涂、草甸和森林完整湿地生态系统的自然保护区。河北衡水湖国家级自然保护区其生物多样性十分丰富，以内陆淡水湿地生态系统和国家一、二级鸟类为主要保护对象，属淡水湿地生态自然保护区。
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="viewIntroduce">
+			<fontType>景区写真</fontType>
+			<p>
+				河北衡水湖国家级自然保护区位于华北平原中南部的衡水市境内，东经115°27′45″-115°42′6″、北纬37°31′39″-37°42′18″之间，总面积187.87平方公里。其生物多样性十分丰富，以内陆淡水湿地生态系统和国家I、II级鸟类为主要保护对象。高贵的仙鹤、美丽的天鹅、灵巧的鸥鸟、轻盈的白鹭，翩翩起舞、悠然嬉戏，衡水湖是人间的仙境，鸟儿的乐园。
+			</p>
+			<p>
+				衡水湖自然保护区不仅生物多样性丰富、自然风光优美，而且文化底蕴丰厚，源远流长。位于衡水湖南岸的冀州古城建于汉高祖六年（公元前201年），史有“天下分九州，冀州为首”之称。汉城墙、明城墙、众多汉古墓、石碑、李三娘石磨及竹林寺飞升上天的许多传说再现了衡水湖的自然、历史、人文景观，让人无不感慨衡水湖的神奇与秀美。
+			</p>
+			<p>
+				衡水湖具有蓄洪防涝防旱、调节气候、控制土壤侵蚀、降解环境污染等功能，它不但造福衡水人民，而且对调解周边乃至京津地区的气候、改善生态环境起到重要作用，她还是南水北调的调蓄水源地，为衡水及周边地市提供饮用水和工农业用水，发挥着促进区域经济发展的重要作用。其生态效益、社会效益、经济效益巨大。去时呈恬淡之态，真正的归依山水、洗心革面，真正的沐浴风华、休闲雅趣
+			</p>
+			<table>
+				<tr>
+					<td>
+						<img src="images/image1.jpg" alt="景区图片1" width="250px">
+					</td>
+					<td>
+						<img src="images/image2.jpg" alt="景区图片1" width="250px">
+					</td>
+					<td>
+						<img src="images/image3.jpg" alt="景区图片1" width="250px">
+					</td>
+					<td>
+						<img src="images/image4.jpg" alt="景区图片1" width="250px">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="foot">
+			<form>
+				<input type="button" name="" value="请您对本次访问之旅进行评价？" onclick="isPingjia()">
+			</form>
+			<p>Copyright © 2020 Adobe Systems Incorporated. All rights reserved.</p>
+			<input type="button" value="返回顶部" id="buttonTop" onclick="pageScroll()">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var chinaTime=setInterval(function(){timea()},1000);
+		function timea(){
+			var week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+			var today = new Date();
+			var time1=parseInt(today.getMonth())+1;
+			var hour=today.getHours();
+			var minute=today.getMinutes();
+			var second=today.getSeconds();
+			if(hour<10){
+				hour='0'+hour;
+			}
+			if(minute<10){
+				minute='0'+minute;
+			}
+			if(second<10){
+				second='0'+second;
+			}
+			time1=""+time1;
+			time1=today.getFullYear()+"年"+time1+"月"+today.getDate()+"日"+week[today.getDay()]+hour+":"+minute+":"+second;
+			document.getElementById("time").innerHTML =time1;
+		}
+		
+
+		user_input = document.getElementById("user_input");
+		number_input = document.getElementById("number_input");
+		time_input = document.getElementById("time_input");
+		batch_input = document.getElementById("batch_input");
+		submit_input = document.getElementById("submit_input");
+		buttonSubmit = document.getElementById("buttonSubmit");
+		buttonFound = document.getElementById("buttonFound");
+		user_input.onblur = function(){
+			if (user_input.value=="")
+				alert("姓名不能为空");
+		}
+		buttonSubmit.onclick = function(){
+			if(user_input.value=="" || number_input.value=="" ||time_input.value=="" || batch_input.value=="")
+				alert("信息不全，预定失败！");
+			else{
+				alert("已暂时保存您的预定信息，本景区期待您的到来");
+			}
+		}
+		buttonFound.onclick = function(){
+			if(user_input.value=="" || number_input.value=="" ||time_input.value=="" || batch_input.value=="")
+				alert("信息不全，查询失败！");
+			else{
+				alert("已暂时保存您的查询信息，本景区期待您的到来");
+			}
+		}
+		function isPingjia(){
+			var key = window.prompt("请输入你对我们叙述的衡水湖印象,1(向往),2(了解),3(陌生)","请输入对应的数字");
+			if(key==3){
+				alert("如果您想了解我们，工作电话18330101618")
+			}
+			else if (key==2){
+				alert("衡水湖欢迎您")
+			}else if (key==1){
+				alert("我在山水之间等您")
+			}
+			else{
+				alert("您没有输入所给选项啊")
+			}
+		}
+		function go(){
+			var title = document.title;
+			var arr = title.split("");
+			var first = arr.shift();
+			arr.push(first);
+			title = arr.join("");
+			document.title = title;
+			setTimeout("go()",1000);
+		}
+		window.onbeforeunload=function(e){     
+			　　var e = window.event||e;  
+			　　e.returnValue=(alert("系统可能不会保存您所做的更改。"));
+		} 
+		function my$(id) {
+			return document.getElementById(id);
+		}
+		var box=my$("box");
+		var inner=box.children[0];
+		var ulObj=inner.children[1];
+		var list=ulObj.children;
+		var olObj=inner.children[2];
+		var arr=my$("arr");
+		var imgWidth=inner.offsetWidth;
+		var right=my$("right");
+		var pic=0;
+		for(var i=0;i<list.length;i++){
+			var liObj=document.createElement("li");
+
+			olObj.appendChild(liObj);
+			liObj.innerText=(i+1);
+			liObj.setAttribute("index",i);
+
+			liObj.onmouseover=function () {
+				for (var j=0;j<olObj.children.length;j++){
+					olObj.children[j].removeAttribute("class");
+				}
+				this.className="current";
+				pic=this.getAttribute("index");
+				animate(ulObj,-pic*imgWidth);
+			}
+
+		}
+		olObj.children[0].className = "current";
+		ulObj.appendChild(ulObj.children[0].cloneNode(true));
+
+		var timeId=setInterval(onmouseclickHandle,2000);
+		box.onmouseover=function () {
+			arr.style.display="block";
+			clearInterval(timeId);
+		};
+		box.onmouseout=function () {
+			arr.style.display="none";
+			timeId=setInterval(onmouseclickHandle,2000);
+		};
+
+		right.onclick=onmouseclickHandle;
+		function onmouseclickHandle() {
+			if (pic == list.length - 1) {
+				pic = 0;
+				ulObj.style.left = 0 + "px";
+			}
+			pic++;
+			animate(ulObj, -pic * imgWidth);
+			if (pic == list.length - 1) {
+				olObj.children[olObj.children.length - 1].className = "";
+				olObj.children[0].className = "current";
+			} else {
+				for (var i = 0; i < olObj.children.length; i++) {
+					olObj.children[i].removeAttribute("class");
+				}
+				olObj.children[pic].className = "current";
+			}
+		}
+		left.onclick=function () {
+			if (pic==0){
+				pic=list.length-1;
+				ulObj.style.left=-pic*imgWidth+"px";
+			}
+			pic--;
+			animate(ulObj,-pic*imgWidth);
+			for (var i = 0; i < olObj.children.length; i++) {
+				olObj.children[i].removeAttribute("class");
+			}
+			olObj.children[pic].className = "current";
+		};
+		function animate(element, target) {
+			clearInterval(element.timeId);
+			element.timeId = setInterval(function () {
+				var current = element.offsetLeft;
+				var step = 10;
+				step = current < target ? step : -step;
+				current += step;
+				if (Math.abs(current - target) > Math.abs(step)) {
+					element.style.left = current + "px";
+				} else {
+					clearInterval(element.timeId);
+					element.style.left = parseInt(target) + "px";
+				}
+			}, 10);
+		}
+
+		function pageScroll(){
+			window.scrollBy(0,-10);
+			scrolldelay = setTimeout('pageScroll()',10);
+			var sTop=document.documentElement.scrollTop+document.body.scrollTop;
+			if(sTop==0){
+				clearTimeout(scrolldelay);
+			} 
+		}
+
+	</script>
+</body>
+</html>
